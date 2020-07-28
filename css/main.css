@@ -68,7 +68,7 @@
 		margin-bottom:6px;
 	}
 
-	#bar1, #bar2, #bar3, #bar4, #bar5
+	#bar1, #bar2, #bar3, #bar5
 	{
 		height:10px;
 		width:100%;
@@ -113,7 +113,14 @@
 	#mobileAd{
 		display:flex;
 		flex-direction:column;
+		text-align:center;
 	}
+
+	#mobileAd p{
+		font-size:22px;
+		margin-bottom:10px;
+	}
+
 	#ad1M,#ad2M,#ad3M,#ad4M,#ad5M{
 		display:block;
 		margin-left:auto;
@@ -157,32 +164,46 @@
 		display:flex;
 		flex-direction: row;
 		width:921px;
+		margin-bottom:0px;
+		border-bottom:none;
 	}
 
 	#headerLogo
 	{
 		display:unset;
+		height:124.61px;
+		width:218px;
+		margin-top:15px;
+	}
+
+	#headerLogoM{
+		display:none;
+
 	}
 
 	#mainNav
 	{
-		margin-top:90px;
+		margin-top:110px;
 		margin-left:20px;
 		font-size:25px;
 		width:900px;
+		margin-bottom:-30px;
 	}
 
 	#mainNav ul
 	{
 		display:flex;
+		flex-direction: row;
+		text-align:unset;
 	}
 
 	#mainNav ul li a {
 		display: block;
-		margin-right: 24px;
+		margin-right: 35px;
 		color:#136D37;
 		text-decoration:none;
 	}
+
 
 	#mainNav ul li a:hover,#footerNav ul li a:hover, #selected:hover, #top:hover {
 		color:#F61712;
@@ -201,21 +222,10 @@
 		margin-right:10px;
 	}
 
-	#bar1, #bar2, #bar3, #bar4, #bar5
+	#bar1, #bar2, #bar3, #bar5
 	{
 		height:15px;
 		width:920px;
-	}
-
-	#bar3
-	{
-		background-color: #29402C;
-	}
-
-	#bar4
-	{
-		background-color: #29402C;
-		display:unset;
 	}
 
 	#footerTop 
@@ -224,6 +234,7 @@
 		flex-direction: row;
 	}
 
+
 	#connect
 	{
 		font-size:29px;
@@ -231,6 +242,13 @@
 		margin-top:10px;
 		display:unset;
 
+	}
+
+	#footMedia{
+		display:unset;
+		margin-left:unset;
+		margin-right:unset;
+		margin-bottom:unset;
 	}
 
 	#instabot, #twitterbot
@@ -250,11 +268,11 @@
 
 	#footerNav
 	{
+		display:block;
 		margin-left:148.5px;
-		margin-top:25px;
+		margin-top:35px;
 		font-size:25px;
 		width:900px;
-		display:unset;
 	}
 
 	#footerNav ul
@@ -273,19 +291,23 @@
 
 	#contactBot
 	{
-		border-right:none;
+		border-right:solid 0px #136D37;
 	}
 
 	#crestLogoBot 
 	{
-		margin-left:349px;
-		margin-top:25px;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:35px;
 		margin-bottom:25px;
 		height:120px;
 		width:223px;
-		font-size:40px;
-		text-align:center;
-		background-color: black;
+	}
+
+	#crestLogoBotM 
+	{
+		display:none;
 	}
 
 
@@ -294,12 +316,37 @@
 		display:unset;
 	}
 
+	#desktopAd p{
+		font-size:25px;
+		margin-bottom:10px;
+	}
+
 	#row1
 	{
 		margin-top:50px;
 		display:flex;
 		flex-direction: row;
 	}
+
+	#adS1, #adS2, #adS3, #adS4, #adS5{
+		display:flex;
+		flex-direction: column;
+		text-align:center;
+		line-height: 30px;
+	}
+
+	#adS1 p, #adS2 p, #adS3 p, #adS4 p, #adS5 p{
+		margin-top:30px;
+	}
+
+	#adS1 p{
+		margin-top:38px;
+	}
+
+	#adS5 {
+		margin-bottom:50px;
+	}
+
 
 	#row2
 	{
@@ -310,13 +357,17 @@
 
 	#ad2, #ad4,
 	{
-		margin-left:auto:;
+		margin-left:auto;
 	}
 
 	#ad5
 	{
+		margin-top:50px;
 		margin-left:230px;
-		margin-bottom:50px;
+	}
+
+	#mobileAd{
+		display:none;
 	}
 
 }
